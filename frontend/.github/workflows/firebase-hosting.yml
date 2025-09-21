@@ -36,3 +36,4 @@ jobs:
       - name: Deploy to Firebase
         run: firebase deploy --only hosting --project ${{ secrets.FIREBASE_PROJECT_ID }}
 
+
