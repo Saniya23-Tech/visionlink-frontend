@@ -1,0 +1,186 @@
+2025-09-21 07:01:48,160 |  INFO | comtypes.client._code_cache | Imported existing <module 'comtypes.gen' from 'C:\\Users\\saniy\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-21 07:01:48,162 |  INFO | comtypes.client._code_cache | Using writeable comtypes cache directory: 'C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2025-09-21 07:01:50,893 |  INFO | httpx | HTTP Request: GET https://ndgwtylymhghkkywykkl.supabase.co/rest/v1/patients?select=%2A "HTTP/2 200 OK"
+2025-09-21 07:01:50,916 |  INFO | visionlink | Loaded 2 patients
+2025-09-21 07:01:50,918 |  INFO | visionlink | Loaded 2 patients on startup
+2025-09-21 07:01:50,921 |  INFO | visionlink | Starting Flask server on port 8000
+2025-09-21 07:01:50,939 | ERROR | visionlink | WebSocket server failed: [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8001): only one usage of each socket address (protocol/network address/port) is normally permitted
+Traceback (most recent call last):
+  File "C:\visionlink\backend\app.py", line 459, in start_websocket_server
+    loop.run_until_complete(websocket_server())
+  File "C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "C:\visionlink\backend\app.py", line 451, in websocket_server
+    async with websockets.serve(register_client, "0.0.0.0", WEBSOCKET_PORT):
+  File "C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\asyncio\server.py", line 813, in __aenter__
+    return await self
+  File "C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\asyncio\server.py", line 831, in __await_impl__
+    server = await self.create_server
+  File "C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1506, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8001): only one usage of each socket address (protocol/network address/port) is normally permitted
+2025-09-21 07:01:51,008 |  INFO | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.201.12.58:8000
+2025-09-21 07:01:51,008 |  INFO | werkzeug | [33mPress CTRL+C to quit[0m
+2025-09-21 08:40:50,142 |  INFO | comtypes.client._code_cache | Imported existing <module 'comtypes.gen' from 'C:\\Users\\saniy\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-21 08:40:50,143 |  INFO | comtypes.client._code_cache | Using writeable comtypes cache directory: 'C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2025-09-21 08:40:52,331 |  INFO | httpx | HTTP Request: GET https://ndgwtylymhghkkywykkl.supabase.co/rest/v1/patients?select=%2A "HTTP/2 200 OK"
+2025-09-21 08:40:52,379 |  INFO | visionlink | Loaded 0 patients with face encodings
+2025-09-21 08:40:52,379 |  INFO | visionlink | Loaded 2 patients on startup (0 with face encodings)
+2025-09-21 08:40:52,381 |  INFO | visionlink | Starting Flask server on port 8000
+2025-09-21 08:40:52,399 |  INFO | websockets.server | server listening on 0.0.0.0:8001
+2025-09-21 08:40:52,400 |  INFO | visionlink | WebSocket server started on port 8001
+2025-09-21 08:40:52,433 |  INFO | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.201.12.58:8000
+2025-09-21 08:40:52,433 |  INFO | werkzeug | [33mPress CTRL+C to quit[0m
+2025-09-21 08:40:52,821 |  INFO | websockets.server | connection open
+2025-09-21 08:44:27,123 |  INFO | websockets.server | connection open
+2025-09-21 08:44:38,732 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:44:38] "OPTIONS /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 08:44:38,768 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:44:38] "POST /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 08:44:47,272 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:44:47] "OPTIONS /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 08:44:47,281 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:44:47] "POST /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 08:44:49,042 |  INFO | visionlink | Started monitoring camera 0
+2025-09-21 08:44:49,057 |  INFO | visionlink | Stopped monitoring camera 0
+2025-09-21 08:44:51,830 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:44:51] "OPTIONS /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 08:44:51,838 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:44:51] "POST /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 08:44:55,899 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:44:55] "OPTIONS /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 08:44:55,910 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:44:55] "POST /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 08:45:01,080 |  INFO | visionlink | Started monitoring camera 0
+2025-09-21 08:45:01,103 |  INFO | visionlink | Stopped monitoring camera 0
+2025-09-21 08:45:21,139 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:45:21] "OPTIONS /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 08:45:21,150 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:45:21] "POST /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 08:45:22,940 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:45:22] "OPTIONS /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 08:45:22,948 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 08:45:22] "POST /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 08:45:30,297 |  INFO | visionlink | Started monitoring camera 0
+2025-09-21 08:45:30,308 |  INFO | visionlink | Stopped monitoring camera 0
+2025-09-21 09:02:37,497 |  INFO | comtypes.client._code_cache | Imported existing <module 'comtypes.gen' from 'C:\\Users\\saniy\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-21 09:02:37,499 |  INFO | comtypes.client._code_cache | Using writeable comtypes cache directory: 'C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2025-09-21 09:02:39,361 |  INFO | httpx | HTTP Request: GET https://ndgwtylymhghkkywykkl.supabase.co/rest/v1/patients?select=%2A "HTTP/2 200 OK"
+2025-09-21 09:02:39,370 |  INFO | visionlink | Loaded 0 patients with face encodings
+2025-09-21 09:02:39,370 |  INFO | visionlink | Loaded 2 patients on startup (0 with face encodings)
+2025-09-21 09:02:39,372 |  INFO | visionlink | Starting Flask server on port 8000
+2025-09-21 09:02:39,386 |  INFO | websockets.server | server listening on 0.0.0.0:8001
+2025-09-21 09:02:39,386 |  INFO | visionlink | WebSocket server started on port 8001
+2025-09-21 09:02:39,413 |  INFO | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.201.12.58:8000
+2025-09-21 09:02:39,413 |  INFO | werkzeug | [33mPress CTRL+C to quit[0m
+2025-09-21 09:05:59,078 |  INFO | websockets.server | connection open
+2025-09-21 09:06:08,975 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:06:08] "OPTIONS /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 09:06:09,014 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:06:09] "POST /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 09:06:18,504 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:06:18] "OPTIONS /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 09:06:18,512 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:06:18] "POST /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 09:06:19,975 |  INFO | visionlink | Started monitoring camera 0
+2025-09-21 09:06:19,986 |  INFO | visionlink | Stopped monitoring camera 0
+2025-09-21 09:37:54,106 |  INFO | comtypes.client._code_cache | Imported existing <module 'comtypes.gen' from 'C:\\Users\\saniy\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-21 09:37:54,109 |  INFO | comtypes.client._code_cache | Using writeable comtypes cache directory: 'C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2025-09-21 09:37:56,016 |  INFO | httpx | HTTP Request: GET https://ndgwtylymhghkkywykkl.supabase.co/rest/v1/patients?select=%2A "HTTP/2 200 OK"
+2025-09-21 09:37:56,075 |  INFO | visionlink | Loaded 0 patients with face encodings
+2025-09-21 09:37:56,076 |  INFO | visionlink | Loaded 2 patients on startup (0 with face encodings)
+2025-09-21 09:37:56,077 |  INFO | visionlink | Starting Flask server on port 8000
+2025-09-21 09:37:56,093 |  INFO | websockets.server | server listening on 0.0.0.0:8001
+2025-09-21 09:37:56,093 |  INFO | visionlink | WebSocket server started on port 8001
+2025-09-21 09:37:56,111 |  INFO | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.201.12.58:8000
+2025-09-21 09:37:56,111 |  INFO | werkzeug | [33mPress CTRL+C to quit[0m
+2025-09-21 09:37:56,257 |  INFO | websockets.server | connection open
+2025-09-21 09:43:46,352 |  INFO | comtypes.client._code_cache | Imported existing <module 'comtypes.gen' from 'C:\\Users\\saniy\\AppData\\Local\\Programs\\Python\\Python39\\lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-09-21 09:43:46,353 |  INFO | comtypes.client._code_cache | Using writeable comtypes cache directory: 'C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\site-packages\comtypes\gen'
+2025-09-21 09:43:48,875 |  INFO | httpx | HTTP Request: GET https://ndgwtylymhghkkywykkl.supabase.co/rest/v1/patients?select=%2A "HTTP/2 200 OK"
+2025-09-21 09:43:48,948 |  INFO | visionlink | Loaded 0 patients with face encodings
+2025-09-21 09:43:48,948 |  INFO | visionlink | Loaded 2 patients on startup (0 with face encodings)
+2025-09-21 09:43:48,950 |  INFO | visionlink | Starting Flask server on port 8000
+2025-09-21 09:43:48,961 | ERROR | visionlink | WebSocket server failed: [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8001): only one usage of each socket address (protocol/network address/port) is normally permitted
+Traceback (most recent call last):
+  File "C:\visionlink\backend\app.py", line 502, in start_websocket_server
+    loop.run_until_complete(websocket_server())
+  File "C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "C:\visionlink\backend\app.py", line 494, in websocket_server
+    async with websockets.serve(register_client, "0.0.0.0", WEBSOCKET_PORT):
+  File "C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\asyncio\server.py", line 813, in __aenter__
+    return await self
+  File "C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\site-packages\websockets\asyncio\server.py", line 831, in __await_impl__
+    server = await self.create_server
+  File "C:\Users\saniy\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 1506, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 10048] error while attempting to bind on address ('0.0.0.0', 8001): only one usage of each socket address (protocol/network address/port) is normally permitted
+2025-09-21 09:43:48,974 |  INFO | werkzeug | [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://10.201.12.58:8000
+2025-09-21 09:43:48,991 |  INFO | werkzeug | [33mPress CTRL+C to quit[0m
+2025-09-21 09:47:08,261 |  INFO | websockets.server | connection open
+2025-09-21 09:47:15,160 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:47:15] "OPTIONS /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 09:47:15,228 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:47:15] "POST /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 09:47:25,373 |  INFO | visionlink | Started monitoring camera 0
+2025-09-21 09:47:25,410 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:26,425 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:27,434 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:28,443 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:29,458 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:30,471 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:31,484 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:32,494 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:33,506 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:34,516 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:35,531 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:36,542 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:37,552 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:38,561 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:39,573 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:40,579 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:41,592 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:42,604 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:43,614 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:44,627 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:45,641 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:46,652 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:47,665 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:48,674 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:49,680 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:50,683 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:51,685 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:52,689 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:53,698 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:54,709 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:55,722 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:56,737 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:57,744 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:58,750 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:47:59,761 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:00,773 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:01,787 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:02,798 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:03,813 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:04,827 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:05,836 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:06,845 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:07,853 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:08,862 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:09,876 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:10,878 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:11,891 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:12,902 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:13,914 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:14,922 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:15,927 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:16,937 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:17,945 | WARNING | visionlink | Failed to read frame from camera 0
+2025-09-21 09:48:18,746 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:48:18] "OPTIONS /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 09:48:18,757 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:48:18] "POST /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 09:48:19,055 |  INFO | visionlink | Stopped monitoring camera 0
+2025-09-21 09:50:23,799 |  INFO | websockets.server | connection open
+2025-09-21 09:51:15,954 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:51:15] "OPTIONS /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 09:51:15,974 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:51:15] "POST /api/start-monitoring HTTP/1.1" 200 -
+2025-09-21 09:51:23,215 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:51:23] "OPTIONS /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 09:51:23,222 |  INFO | werkzeug | 127.0.0.1 - - [21/Sep/2025 09:51:23] "POST /api/stop-monitoring HTTP/1.1" 200 -
+2025-09-21 09:51:25,055 |  INFO | visionlink | Started monitoring camera 0
+2025-09-21 09:51:25,066 |  INFO | visionlink | Stopped monitoring camera 0

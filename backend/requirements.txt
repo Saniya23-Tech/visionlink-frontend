@@ -1,0 +1,10 @@
+opencv-python
+google-generativeai
+supabase
+flask
+flask-cors
+mediapipe
+python-dotenv
+requests
+numpy
+face-recognition

@@ -1,0 +1,33 @@
+
+name: visionlink
+description: "VisionLink is an AI-powered medical assistive app designed to revolutionize patient monitoring by helping healthcare staff observe non-verbal patients through intelligent video analysis and real-time alerts."
+publish_to: "none"
+version: 1.0.0
+
+environment:
+  sdk: '>=3.6.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.1.0
+  http: ^1.2.2
+  flutter_dotenv: ^6.0.0        # for environment variables
+  supabase_flutter: ^2.5.6
+  flutter_riverpod: ^2.3.6      # for state management
+  camera: ^0.10.0+1             # for video input
+  image_picker: ^1.1.2
+  web_socket_channel: ^2.4.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0         # updated lints
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  assets: 
+  - .env
+  
